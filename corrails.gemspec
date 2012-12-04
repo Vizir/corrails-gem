@@ -1,9 +1,9 @@
 Gem::Specification.new do |s|
   s.name        = 'corrails'
   s.version     = '0.0.5'
-  s.date        = '2010-04-28'
-  s.summary     = "Corrails"
-  s.description = "Corrails"
+  s.date        = '2012-12-02'
+  s.summary     = "Gem utilizada para rastrear pedidos da Directlog ou dos Correios"
+  s.description = "Gem utilizada para rastrear pedidos da Directlog ou dos Correios"
   s.authors     = ["Vizir"]
   s.email       = 'contato@vizir.com.br'
   s.files       = [
