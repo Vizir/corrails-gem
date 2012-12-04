@@ -16,9 +16,8 @@ require 'corrails'
 login = '1234'
 password = '5678'
 pedido = '91011'
-wsdl = 'http://...?wsdl'
 
-directlog = Corrails::Directlog.new(wsdl)
+directlog = Corrails::Directlog.new
 response = directlog.rastrear(login, password, pedido)
 
 if(response.ok?)
