@@ -39,7 +39,7 @@ end
 
 ```
 
-Exemplo Correio
+Exemplo Correios
 ===============
 ```ruby
 require 'rubygems'
