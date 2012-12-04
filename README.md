@@ -54,6 +54,7 @@ if response.ok?
     status = h[:status]
     data =  h[:data]
     local = h[:local]
+    ...
   end
 else
   error = response.error_msg
