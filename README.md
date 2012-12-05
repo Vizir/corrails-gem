@@ -1,14 +1,26 @@
-corrails-gem
-============
+# corrails-gem
 
-Gem utilizada para rasttrear itens da Directlog e/ou dos Correios.
+Gem utilizada para rastrear despachados através de diversos agentes de logísticas, atualmente é possível rastrear itens despachados através das seguintes empresas:
+* [Correios](http://www.correios.com.br)
+* [DirectLog](http://www.directlog.com.br)
 
-Instalação
-=========
+## Instalação
+
+### Ambiente sem Rails
 gem install corrails
 
-Exemplo Directlog
-=================
+### Instalação em ambiente rails
+Adicionar a gem corrails ao Gemfile conforme abaixo
+
+```ruby
+gem 'corrails'
+```
+
+Executar o comando bundle install para instalar a gem.
+
+
+## Exemplo Directlog
+
 ```ruby
 require 'rubygems'
 require 'corrails'
@@ -39,8 +51,7 @@ end
 
 ```
 
-Exemplo Correios
-===============
+## Exemplo Correios
 ```ruby
 require 'rubygems'
 require 'corrails'
