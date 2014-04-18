@@ -1,0 +1,2 @@
+require_relative '../lib/corrails/cli'
+Corrails::CLI.start(ARGV)
