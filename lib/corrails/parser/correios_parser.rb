@@ -3,7 +3,7 @@ require File.expand_path('../../model/response', __FILE__)
 module Corrails
   module Parser
     class CorreiosParser
-     
+
      def self.parse(html)
         response = Corrails::Response.new
         regex = /^<tr><td rowspan=.*>(.*)<\/td><td>(.*)<\/td><td><FONT COLOR=".*">(.*)<\/font><\/td><\/tr>$/
@@ -15,7 +15,7 @@ module Corrails
             :status => status
             })
         end
-        
+
         if not (historicos.empty?)
           response.result = true
           response.item = Hash.new
@@ -25,7 +25,7 @@ module Corrails
         end
         response
       end
-   
+
    end
   end
 end

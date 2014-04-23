@@ -4,9 +4,9 @@ class Response
 
   def initialize
   end
-  
+
   def ok?
-    result == true  
+    result == true
   end
 end
 

@@ -7,11 +7,11 @@ module Corrails
       def self.parse(returnXml)
         resp = returnXml.to_hash[:consulta_status_entrega_response]
         response = Corrails::Response.new
-        response.result = resp[:consulta_status_entrega_result] 
+        response.result = resp[:consulta_status_entrega_result]
         if(response.ok?)
-          response.item = build_remessa(resp[:xml]) 
+          response.item = build_remessa(resp[:xml])
         else
-          response.error_msg = get_error(resp[:xml]) 
+          response.error_msg = get_error(resp[:xml])
         end
         response
       end
@@ -27,7 +27,7 @@ module Corrails
         pedido = xml_doc.xpath('//nrpedido').first.content
         notafiscal = xml_doc.xpath('//nrnotafiscal').first.content
         serianota = xml_doc.xpath('//serianota').first.content
-        
+
         remessa = Hash.new
         remessa[:numero] = numero
         remessa[:pedido] = pedido
@@ -39,7 +39,7 @@ module Corrails
 
       def self.get_status_list(xml_doc)
         status_list = Array.new
-        historicos = xml_doc.xpath("//historicos//status") 
+        historicos = xml_doc.xpath("//historicos//status")
         historicos.each do |historico|
           status = Hash.new
           status[:codigo] = historico.xpath('codstatus').first.content
@@ -64,4 +64,4 @@ module Corrails
       end
     end
   end
-end  
+end
