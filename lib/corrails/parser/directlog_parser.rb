@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 require 'nokogiri'
 require File.expand_path('../../model/response', __FILE__)
 
