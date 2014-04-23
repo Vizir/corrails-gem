@@ -1,5 +1,6 @@
 Gem::Specification.new do |s|
   s.name        = 'corrails'
+  s.required_ruby_version = '>= 1.9'
   s.version     = '0.0.7'
   s.date        = '2014-04-23'
   s.summary     = "Gem utilizada para rastrear pedidos da Directlog ou dos Correios"
