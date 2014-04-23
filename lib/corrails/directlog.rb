@@ -7,7 +7,7 @@ module Corrails
   
   class Directlog
     attr_accessor :wsdl 
-    def initialize(wsdl)
+    def initialize(wsdl='http://wsdirect.directlog.com.br/v2/wsdirectlog.asmx?wsdl')
       @client = Savon.client(wsdl);
     end
 

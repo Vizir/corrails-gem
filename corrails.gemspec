@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name        = 'corrails'
-  s.version     = '0.0.5'
+  s.version     = '0.0.6'
   s.date        = '2012-12-02'
   s.summary     = "Gem utilizada para rastrear pedidos da Directlog ou dos Correios"
   s.description = "Gem utilizada para rastrear pedidos da Directlog ou dos Correios"
@@ -17,5 +17,5 @@ Gem::Specification.new do |s|
   s.add_dependency "savon", "~> 1.2.0"
   s.add_dependency "nokogiri", "~> 1.5.5"
   s.homepage    =
-  'http://rubygems.org/gems/corrails'
+  'https://github.com/Vizir/corrails-gem'
 end
