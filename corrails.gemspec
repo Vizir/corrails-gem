@@ -16,6 +16,7 @@ Gem::Specification.new do |s|
                   ]
   s.add_dependency "savon", "~> 1.2.0"
   s.add_dependency "nokogiri", "~> 1.5.5"
+  s.add_dependency 'thor'
   s.homepage    =
   'https://github.com/Vizir/corrails-gem'
 end
